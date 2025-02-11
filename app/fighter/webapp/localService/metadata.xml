@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/Common.xml" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+        <edmx:Include Alias="Common" Namespace="com.sap.vocabularies.Common.v1"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://oasis-tcs.github.io/odata-vocabularies/vocabularies/Org.OData.Core.V1.xml" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+        <edmx:Include Alias="Core" Namespace="Org.OData.Core.V1"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/UI.xml" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+        <edmx:Include Alias="UI" Namespace="com.sap.vocabularies.UI.v1"/>
+    </edmx:Reference>
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="StarWarsService" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <Annotation Term="Core.Links" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Collection>
+                    <Record>
+                        <PropertyValue Property="rel" String="author"/>
+                        <PropertyValue Property="href" String="https://cap.cloud.sap"/>
+                    </Record>
+                </Collection>
+            </Annotation>
+            <EntityContainer Name="EntityContainer" m:IsDefaultEntityContainer="true">
+                <EntitySet Name="StarWarsFighter" EntityType="StarWarsService.StarWarsFighter"/>
+            </EntityContainer>
+            <EntityType Name="StarWarsFighter">
+                <Key>
+                    <PropertyRef Name="id"/>
+                </Key>
+                <Property Name="id" Type="Edm.String" MaxLength="10" Nullable="false"/>
+                <Property Name="name" Type="Edm.String"/>
+                <Property Name="manufacturer" Type="Edm.String"/>
+                <Property Name="model" Type="Edm.String"/>
+                <Property Name="fighterCategory" Type="Edm.String"/>
+                <Property Name="builtAt" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="height" Type="Edm.Decimal" Precision="5" Scale="2"/>
+                <Property Name="weight" Type="Edm.Decimal" Precision="7" Scale="2"/>
+                <Property Name="length" Type="Edm.Decimal" Precision="5" Scale="2"/>
+                <Property Name="width" Type="Edm.Decimal" Precision="5" Scale="2"/>
+                <Property Name="crewSize" Type="Edm.Int32"/>
+                <Property Name="passengerCapacity" Type="Edm.Int32"/>
+                <Property Name="propulsion" Type="Edm.String"/>
+                <Property Name="maxAtmosphericSpeed" Type="Edm.String"/>
+                <Property Name="maxAcceleration" Type="Edm.String"/>
+                <Property Name="hyperdriveClass" Type="Edm.String"/>
+                <Property Name="laserCannons" Type="Edm.Int32"/>
+                <Property Name="protonTorpedoCapacity" Type="Edm.Int32"/>
+                <Property Name="additionalWeapons" Type="Edm.String"/>
+                <Property Name="status_code" Type="Edm.String"/>
+            </EntityType>
+            <Annotations Target="StarWarsService.StarWarsFighter" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="UI.SelectionFields">
+                    <Collection>
+                        <PropertyPath>name</PropertyPath>
+                        <PropertyPath>manufacturer</PropertyPath>
+                        <PropertyPath>fighterCategory</PropertyPath>
+                        <PropertyPath>status_code</PropertyPath>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="UI.LineItem">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="name"/>
+                            <PropertyValue Property="Label" String="Fighter Name"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="manufacturer"/>
+                            <PropertyValue Property="Label" String="Manufacturer"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="model"/>
+                            <PropertyValue Property="Label" String="Model"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="fighterCategory"/>
+                            <PropertyValue Property="Label" String="Category"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="crewSize"/>
+                            <PropertyValue Property="Label" String="Crew Size"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="status/name"/>
+                            <PropertyValue Property="Label" String="Status"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="maxAtmosphericSpeed"/>
+                            <PropertyValue Property="Label" String="Max Speed"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="laserCannons"/>
+                            <PropertyValue Property="Label" String="Laser Cannons"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="StarWarsService.StarWarsFighter/name" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.Label" String="Fighter Name"/>
+            </Annotations>
+            <Annotations Target="StarWarsService.StarWarsFighter/manufacturer" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.Label" String="Manufacturer"/>
+            </Annotations>
+            <Annotations Target="StarWarsService.StarWarsFighter/model" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.Label" String="Model"/>
+            </Annotations>
+            <Annotations Target="StarWarsService.StarWarsFighter/fighterCategory" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.Label" String="Fighter Category"/>
+            </Annotations>
+            <Annotations Target="StarWarsService.StarWarsFighter/crewSize" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.Label" String="Crew Size"/>
+            </Annotations>
+            <Annotations Target="StarWarsService.StarWarsFighter/maxAtmosphericSpeed" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.Label" String="Maximum Atmospheric Speed"/>
+            </Annotations>
+            <Annotations Target="StarWarsService.StarWarsFighter/laserCannons" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.Label" String="Number of Laser Cannons"/>
+            </Annotations>
+            <Annotations Target="StarWarsService.StarWarsFighter/status_code" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.Label" String="Status"/>
+            </Annotations>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

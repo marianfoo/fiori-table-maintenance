@@ -1,0 +1,44 @@
+<mvc:View controllerName="com.starwars.fighter.controller.MainView"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:table="sap.ui.table"
+    xmlns:f="sap.f"
+    xmlns:smarttable="sap.ui.comp.smarttable"
+    xmlns:smartvariants="sap.ui.comp.smartvariants"
+    xmlns:smartfilterbar="sap.ui.comp.smartfilterbar"
+    xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+    xmlns:core="sap.ui.core">
+    <Page id="page" title="{i18n>title}">
+        <f:DynamicPage id="dynamicPageId" headerExpanded="true" toggleHeaderOnTitleClick="true">
+            <f:title>
+                <f:DynamicPageTitle>
+                    <f:heading>
+                        <smartvariants:SmartVariantManagement id="svm" persistencyKey="StarWarsFighterVariants" showShare="true"/>
+                    </f:heading>
+                </f:DynamicPageTitle>
+            </f:title>
+
+            <f:header>
+                <f:DynamicPageHeader pinnable="true">
+                    <smartfilterbar:SmartFilterBar id="smartFilterBar" entitySet="StarWarsFighter" persistencyKey="StarWarsFighterFilter" useToolbar="false">
+                    </smartfilterbar:SmartFilterBar>
+                </f:DynamicPageHeader>
+            </f:header>
+
+            <f:content>
+                <smarttable:SmartTable id="smartTable" entitySet="StarWarsFighter" smartFilterId="smartFilterBar" smartVariant="svm" tableType="Table" enableExport="true" editable="true" editTogglable="true" app:useSmartToggle="true" app:useSmartField="true" beforeExport=".onBeforeExport" useVariantManagement="true" useTablePersonalisation="true" header="Star Wars Fighters" showRowCount="true" enableAutoColumnWidth="true" enableAutoBinding="true" persistencyKey="StarWarsFighterSmartTable" fieldChange=".onFieldChange" class="sapUiResponsiveMargin">
+                    <smarttable:layoutData>
+                        <FlexItemData growFactor="1" baseSize="0%"/>
+                    </smarttable:layoutData>
+                    <smarttable:customToolbar>
+                        <OverflowToolbar>
+                            <ToolbarSpacer/>
+                            <Button text="Refresh Table" type="Emphasized" press=".onRefreshTable"/>
+                            <Button text="Save Changes" type="Emphasized" press=".onSubmitChanges"/>
+                        </OverflowToolbar>
+                    </smarttable:customToolbar>
+                </smarttable:SmartTable>
+            </f:content>
+        </f:DynamicPage>
+    </Page>
+</mvc:View>
