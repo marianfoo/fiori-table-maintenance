@@ -1,0 +1,21 @@
+id,name,manufacturer,model,fighterCategory,builtAt,height,weight,length,width,crewSize,passengerCapacity,propulsion,maxAtmosphericSpeed,maxAcceleration,hyperdriveClass,laserCannons,protonTorpedoCapacity,additionalWeapons,status_code
+SF001,X-wing,Incom Corporation,T-65B,Assault,2020-01-15T10:00:00Z,2.4,10000,12.5,11.76,1,0,Twin ion engines,1050 km/h,3100 G,1.0 HCR,4,6,Deflector shields,AVAILABLE
+SF002,TIE Fighter,Sienar Fleet Systems,TIE/ln,Interceptor,2020-02-20T08:30:00Z,7.5,6300,6.3,6.4,1,0,Twin ion engines,1200 km/h,4100 G,0,2,0,None,MISSION
+SF003,A-wing,Kuat Systems Engineering,RZ-1,Interceptor,2020-03-10T14:20:00Z,3.11,4500,9.6,6.48,1,0,Novaldex J-44,1300 km/h,5100 G,1.0 HCR,2,12,Concussion missiles,TRAINING
+SF004,B-wing,Slayne & Korpil,A/SF-01,Heavy Assault,2020-04-05T09:15:00Z,7.3,20000,16.9,2.9,1,0,Quadex Kyromaster,950 km/h,2390 G,1.0 HCR,3,12,Ion cannons,IN_MAINTENANCE
+SF005,Y-wing,Koensayr Manufacturing,BTL-B,Bomber,2020-05-12T11:30:00Z,2.3,16000,14.0,8.54,2,0,Twin ion engines,950 km/h,2700 G,1.0 HCR,2,8,Ion cannons,AVAILABLE
+SF006,Naboo N-1,Theed Palace Engineering,N-1,Interceptor,2020-06-18T16:45:00Z,2.65,8000,11.0,3.8,1,0,J-type engine,1100 km/h,3500 G,1.0 HCR,2,10,Deflector shields,STANDBY
+SF007,ARC-170,Incom/Subpro,ARC-170,Assault,2020-07-22T13:20:00Z,4.78,9500,14.5,22.6,3,0,Twin ion engines,1000 km/h,2800 G,1.0 HCR,2,6,Rear laser cannons,MISSION
+SF008,Jedi Starfighter,Kuat Systems Engineering,Delta-7,Interceptor,2020-08-30T10:10:00Z,1.44,5000,8.0,3.92,1,0,Jetforce J-44,1150 km/h,3800 G,1.0 HCR,2,0,Deflector shields,DECOMMISSIONED
+SF009,V-wing,Kuat Systems Engineering,Alpha-3,Interceptor,2020-09-14T15:25:00Z,5.84,6000,7.9,3.8,1,0,Twin ion engines,1050 km/h,3200 G,0,2,0,None,REFUELING
+SF010,TIE Interceptor,Sienar Fleet Systems,TIE/IN,Interceptor,2020-10-05T12:40:00Z,7.9,7000,9.6,6.6,1,0,Twin ion engines,1250 km/h,4300 G,0,4,0,None,AVAILABLE
+SF011,E-wing,FreiTek Inc,E-wing,Assault,2020-11-11T09:50:00Z,2.9,12000,11.2,8.6,1,0,Triple ion engines,1100 km/h,3600 G,1.0 HCR,3,12,Deflector shields,DAMAGED
+SF012,TIE Bomber,Sienar Fleet Systems,TIE/sa,Bomber,2020-12-20T14:15:00Z,7.8,13500,7.8,8.6,2,0,Twin ion engines,850 km/h,2850 G,0,2,8,Orbital mines,TRAINING
+SF013,Droid Tri-Fighter,Colicoid Creation Nest,tri-fighter,Interceptor,2021-01-25T11:35:00Z,3.45,3500,5.4,1.96,0,0,Triple thrusters,1180 km/h,3900 G,0,4,6,Buzz droids,AVAILABLE
+SF014,Vulture Droid,Haor Chall Engineering,vulture-droid,Interceptor,2021-02-28T16:55:00Z,3.5,4000,3.5,3.6,0,0,Twin ion engines,1200 km/h,3700 G,0,4,6,Energy torpedoes,STANDBY
+SF015,Z-95 Headhunter,Incom/Subpro,Z-95,Assault,2021-03-15T13:45:00Z,2.4,9000,11.8,8.7,1,0,Twin ion engines,1000 km/h,2950 G,0,2,6,Concussion missiles,IN_MAINTENANCE
+SF016,U-wing,Incom Corporation,UT-60D,Support,2021-04-22T10:25:00Z,3.51,25000,23.99,8.54,2,8,Fusial thrust,950 km/h,2600 G,1.0 HCR,2,0,Door gunners,MISSION
+SF017,Porax-38,Utapaun,P-38,Interceptor,2021-05-30T15:40:00Z,2.8,5500,9.8,4.2,1,0,Ion engine,1100 km/h,3300 G,1.0 HCR,2,4,Deflector shields,AVAILABLE
+SF018,Belbullab-22,Feethan Ottraw Scalable,Belbullab-22,Assault,2021-06-14T12:30:00Z,3.6,8500,6.71,3.2,1,0,Twin ion engines,1100 km/h,3400 G,1.0 HCR,2,6,Deflector shields,DAMAGED
+SF019,V-19 Torrent,Slayne & Korpil,V-19,Interceptor,2021-07-20T09:20:00Z,2.8,7000,8.2,5.4,1,0,Twin ion engines,1150 km/h,3550 G,0,2,4,Concussion missiles,REFUELING
+SF020,Eta-2,Kuat Systems Engineering,Eta-2 Actis,Interceptor,2021-08-25T14:50:00Z,2.5,4500,5.47,4.3,1,0,Twin ion engines,1500 km/h,5000 G,1.0 HCR,2,0,Ion cannons,STANDBY

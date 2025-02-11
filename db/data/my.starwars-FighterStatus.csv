@@ -1,0 +1,9 @@
+code,name,description,isOperational
+AVAILABLE,Available,Fighter is fully operational and ready for deployment,true
+IN_MAINTENANCE,In Maintenance,Undergoing scheduled maintenance or repairs,false
+DAMAGED,Damaged,Fighter has sustained damage and requires repairs,false
+MISSION,On Mission,Currently deployed on an active mission,true
+TRAINING,Training Mission,Assigned to pilot training exercises,true
+DECOMMISSIONED,Decommissioned,Permanently retired from service,false
+REFUELING,Refueling,Currently being refueled and resupplied,false
+STANDBY,On Standby,Prepped and ready for immediate deployment,true
