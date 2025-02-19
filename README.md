@@ -1,5 +1,8 @@
 # Getting Started
 
+This was documented in this blog post:  
+https://community.sap.com/t5/technology-blogs-by-members/simple-table-maintenance-in-sap-fiori-using-ui5-smart-controls/ba-p/14014547
+
 Welcome to your new project.
 
 It contains these folders and files, following our recommended project layout:
